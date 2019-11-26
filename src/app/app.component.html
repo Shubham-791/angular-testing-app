@@ -3,3 +3,11 @@
       <input name="last" ngModel>
       <button>Submit</button>
   </form>
+
+<br><br>
+<form (ngSubmit)="onSubmitReactive()" [formGroup]="formG" novalidate>
+  <input required formControlName="firstName"><br>
+  <input formControlName="lastName"><br>
+  <button type="submit">Submit</button>
+
+</form>
